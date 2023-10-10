@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+
 #content{
     max-width: 1600px;
     margin: 0% auto;}
@@ -23,17 +25,33 @@ main section{
     height: 725px;}
            
 body {
-    background-color: #0fa3b1; }
+    font-family: Raleway, Arial, sans-serif;
+    background-color: #0fa3b1;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;}
 
 header {
-    background-color:#f7a072}
+    background-color:#f7a072;
+}
+
+nav a {padding: 35px;
+}
 
 nav a:hover {
     background-color: #f7a072;
-    color: #d9c2a3;}
+    color: #d9c2a3;
+}
 
 .home-title{
-    color: white;}
+    color: white;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+}   
 
 h4{
     color: white;}
@@ -41,12 +59,22 @@ h4{
 .book {
     background-color: #f7a072;
     color: white;
-    text-decoration: none;}
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
 
 .join {
-    background-color: #f7a072;
+    background-color: #0fa3b1;
     color: white;
-    text-decoration: none;}
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
 
 .book:hover {
     background-color: #f7a072;}
@@ -57,15 +85,32 @@ h4{
 
 #background{
     background-color: #f7a072;
-    color: white;}
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 
 .msg{
     background-color: #f7a072;
-    color: white;}
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+    padding: 35px;
+    margin-top: 100px;}
+
+}
+
+.msg p{
+    font-size: .8em;
+    padding: 15px; 
+}
 
 footer{
     background-color: #f7a072;
-    color: white;}
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
 
 footer a{
     background-color: #f7a072;
@@ -74,13 +119,24 @@ footer a{
 
 footer a:hover {
     background-color: #f7a072;
-    color: white;}
+    color: white;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
 
 .logo {
     width: 80px;}
 
 .icon {
-    width: 80px;}
+    width: 80px;
+    padding-top: 10px;
+}
 
 #hero-img {
     width: 100%;}
@@ -91,3 +147,23 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+
+.rivers-card {
+    margin: 200px 0;
+}
+
+.camping-card {
+    margin: 200px 0;
+} 
+
+.rapids-card {margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+    
