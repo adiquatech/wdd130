@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Dancing+Script&family=Lobster&family=Pacifico&family=Roboto&family=Yanone+Kaffeesatz:wght@200&display=swap');
+
+/*font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Dancing Script', 'Roboto', cursive;
+font-family: 'Lobster', sans-serif;
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Yanone Kaffeesatz', 'Roboto', sans-serif;*/
 
 #content{
     max-width: 1600px;
@@ -29,7 +36,7 @@ main section{
     margin-bottom: 100px;}
            
 body {
-    font-family: Raleway, Arial, sans-serif;
+    font-family:'Barlow Condensed', 'Roboto', sans-serif;
     background-color: #0fa3b1;
     font-size: 2em;
     margin: 0;
@@ -48,6 +55,7 @@ nav a:hover {
 }
 
 .home-title{
+    font-family: 'Dancing Script', 'cursive', sans-serif;
     color: white;
     font-size: 2em;
     margin-top: 10px;
@@ -90,7 +98,7 @@ h4{
 .msg{
     background-color: #f7a072;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Yanone Kaffeesatz', 'Roboto', sans-serif;
     line-height: 1.5em;
     padding: 35px;
     margin-top: 200px;}
@@ -98,6 +106,10 @@ h4{
 .msg p{
     font-size: .8em;
     padding: 15px; 
+}
+
+.msg h2{
+    font-family: 'Pacifico', 'cursive', sans-serif;
 }
 
 footer{
