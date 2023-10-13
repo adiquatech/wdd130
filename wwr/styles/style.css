@@ -22,7 +22,11 @@ main section{
     text-align: center;}
 
 #background {
-    height: 725px;}
+    height: 725px;
+    background-color: #f7a072;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;}
            
 body {
     font-family: Raleway, Arial, sans-serif;
@@ -83,22 +87,13 @@ h4{
     background-color: #f7a072;
     color: white;}
 
-#background{
-    background-color: #f7a072;
-    color: white;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
 .msg{
     background-color: #f7a072;
     color: white;
     font-family: 'Courier New', Courier, monospace;
     line-height: 1.5em;
     padding: 35px;
-    margin-top: 100px;}
-
-}
+    margin-top: 200px;}
 
 .msg p{
     font-size: .8em;
