@@ -55,10 +55,11 @@ nav a:hover {
 }
 
 .home-title{
-    font-family: 'Dancing Script', 'cursive', sans-serif;
+    font-family: 'Dancing Script', 'Roboto', cursive;
     color: white;
     font-size: 2em;
     margin-top: 10px;
+    text-transform: uppercase;
 }
 
 h2 {
