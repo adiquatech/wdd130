@@ -24,7 +24,6 @@ main section{
     height: 725px;
     background-color: #f7a072;
     color: white;
-    margin-top: 100px;
     margin-bottom: 100px;
     grid-column: 1/11;
     grid-row: 4/9;
