@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life in Weeks Calculator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Life in Weeks Calculator</h1>
+    <h4>Assuming a life expectancy of 70 years</h4>
+    <p>Enter your age and click the button to calculate the remaining time.</p>
+    <input type="number" id="age" placeholder="Enter your age">
+    <button onclick="calculateRemainingTime()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function lifeinweek(age) {
+            // Assuming a life expectancy of 50 years
+            var lifeExpectancy = 70;
+            var yearsRemaining = lifeExpectancy - age;
+            var days = yearsRemaining * 365;
+            var weeks = yearsRemaining * 52;
+            var months = yearsRemaining * 12;
+
+            return "You have " + days + " days, " + weeks + " weeks, " + months + " months, " + "and " + yearsRemaining + " years left.";
+        }
+
+        function calculateRemainingTime() {
+            var ageInput = document.getElementById("age");
+            var resultParagraph = document.getElementById("result");
+
+            var age = parseInt(ageInput.value);
+
+            if (!isNaN(age) && age >= 0) {
+                var result = lifeinweek(age);
+                resultParagraph.textContent = result;
+            } else {
+                resultParagraph.textContent = "Please enter a valid age.";
+            }
+        }
+    </script>
+</body>
+</html>
