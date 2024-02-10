@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/style.css"><link rel="stylesheet" href="styles/style.css">
+    <title>Leap Year Calculator</title>
+    <style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    h1 {
+        color: #3498db;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    input {
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #2980b9;
+    }
+
+    #result {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+    #result.leap {
+        color: #27ae60;
+    }
+
+    #result.not-leap {
+        color: #e74c3c;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/adiqua4web-logos.jpg" alt="Dry Oar Logo">
+        </a>
+        <nav>
+             <!--<a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+            <a href="site-plan.html">Site Plan</a>
+            <a href="contactus.html">Contact Us</a> -->
+        </nav>
+    </header>
+
+    <h1>Leap Year Calculator</h1>
+    <p>Enter a year and click the button to check if it is a leap year or not.</p>
+    <input type="number" id="year" placeholder="Enter a year">
+    <button id="check">Check</button>
+    <p id="result"></p>
+
+    <footer>
+        <p> Adiqua4web &copy; 2023 - Adiquatech</p>
+        <!-- <p><a href="site-plan.html">Site Plan</a></p> -->
+        <!-- <p><a href="contactus.html">Contact Us</a></p> -->
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </div>
+    </footer>
+    <script>
+        // get the input element
+        var yearInput = document.getElementById("year");
+        // get the button element
+        var checkButton = document.getElementById("check");
+        // get the result element
+        var resultParagraph = document.getElementById("result");
+        // add a click event listener to the button
+        checkButton.addEventListener("click", function() {
+            // get the value of the input element
+            var year = yearInput.value;
+            // validate the input
+            if (year && !isNaN(year)) {
+                // convert the input to a number
+                year = Number(year);
+                // call the isLeapYear function and store the result
+                var isLeap = isLeapYear(year);
+                // display the result
+                if (isLeap) {
+                    resultParagraph.textContent = year + " is a leap year.";
+                } else {
+                    resultParagraph.textContent = year + " is not a leap year.";
+                }
+            } else {
+                // display an error message
+                resultParagraph.textContent = "Please enter a valid year.";
+            }
+        });
+        // define the isLeapYear function
+        function isLeapYear(year) {
+            // check if the year is divisible by 4 and not divisible by 100
+            // or if the year is divisible by 400
+            return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+        }
+    </script>
+</body>
+</html>
